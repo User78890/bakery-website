@@ -351,3 +351,9 @@ body{
 .order-section h2{
   color:#d46a92;
 }
+
+.credit{
+  margin-top:10px;
+  font-size:0.9rem;
+  color:#999;
+}
