@@ -1,0 +1,152 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manju's Bakery</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍰</text></svg>">
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h1 class="logo">Manju's Bakery 🍰</h1>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#cakes">Cakes</a>
+      <a href="#order">Order</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-text">
+      <h2>Fresh Homemade Cakes Made With Love</h2>
+
+      <p>
+        Custom cakes, cupcakes, brownies and sweet treats
+        for birthdays, celebrations and every sweet craving.
+      </p>
+
+      <a href="#order" class="hero-btn">Order Now</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop" alt="Cake">
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+      We create fresh homemade cakes with quality ingredients,
+      beautiful designs, and lots of love. From birthdays to
+      custom celebration cakes, every order is specially made
+      for you.
+    </p>
+
+  </section>
+
+  <!-- CAKES -->
+  <section class="cakes" id="cakes">
+
+    <h2>Popular Cakes</h2>
+
+    <div class="cake-grid">
+
+      <div class="cake-card">
+        <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?q=80&w=1200&auto=format&fit=crop" alt="">
+        <h3>Chocolate Truffle</h3>
+        <p>Rich chocolate cake with smooth ganache.</p>
+      </div>
+
+      <div class="cake-card">
+        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=1200&auto=format&fit=crop" alt="">
+        <h3>Red Velvet</h3>
+        <p>Soft velvet sponge with cream cheese frosting.</p>
+      </div>
+
+      <div class="cake-card">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1200&auto=format&fit=crop" alt="">
+        <h3>Custom Birthday Cakes</h3>
+        <p>Personalized themed cakes for celebrations.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+ <!-- ORDER FORM -->
+
+<form class="order-form" id="orderForm">
+
+  <input type="text" id="name" placeholder="Your Name" required>
+
+  <input type="tel" id="phone" placeholder="Phone Number" required>
+
+  <textarea id="address" placeholder="Delivery Address" required></textarea>
+
+  <select id="cakeType" required>
+    <option value="">Choose Cake Type</option>
+    <option>Chocolate Cake</option>
+    <option>Red Velvet</option>
+    <option>Butterscotch</option>
+    <option>Black Forest</option>
+    <option>Custom Cake</option>
+  </select>
+
+  <!-- NEW CAKE SIZE -->
+
+  <select id="cakeSize" required>
+    <option value="">Choose Cake Size</option>
+    <option>0.5 KG</option>
+    <option>1 KG</option>
+    <option>1.5 KG</option>
+    <option>2 KG</option>
+    <option>Custom Size</option>
+  </select>
+
+  <!-- EGGLESS -->
+
+  <div class="checkbox-group">
+    <input type="checkbox" id="eggless">
+    <label for="eggless">Eggless Cake</label>
+  </div>
+
+  <input type="date" id="deliveryDate" required>
+
+  <textarea id="cakeMessage" placeholder="Custom Message on Cake"></textarea>
+
+  <textarea id="instructions" placeholder="Special Instructions"></textarea>
+
+  <label class="upload-box">
+    Upload Reference Images
+    <input type="file" multiple hidden>
+  </label>
+
+  <button type="submit">
+    Order on WhatsApp
+  </button>
+
+</form>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Made with ❤️ and lots of frosting</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
